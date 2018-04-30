@@ -1,0 +1,8 @@
+<h2>Some cool movies, yo</h2>
+
+<div class="movie-container">
+  <div class="movie-card" ng-repeat="movie in movieList">
+    <h4>{{movie.title}}</h4>
+    <img ng-src={{movie.poster}} alt="poster for {{movie.title}}">
+  </div>
+</div>
