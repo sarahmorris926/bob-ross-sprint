@@ -8,6 +8,7 @@ app.use(express.static(__dirname + "/client"));
 app.use("/angular", express.static(__dirname + "/node_modules/angular/"));
 app.use("/angular-route", express.static(__dirname + "/node_modules/angular-route/"));
 
+// TODO: Move into routes module
 app.get("/movies", (req, res, next) => {
   movieApi
     .search(
