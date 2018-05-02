@@ -7,5 +7,6 @@
   <div class="movie-card" ng-repeat="movie in movieList">
     <h4>{{movie.title}}</h4>
     <img ng-src={{movie.poster}} alt="poster for {{movie.title}}">
+    <a class="button" ng-click="addToWatchlist(foo)">ADD</a>
   </div>
 </div>

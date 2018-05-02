@@ -1,6 +1,7 @@
 body {
   background: rebeccapurple;
-  color: wheat; }
+  color: wheat;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .movie-container {
   display: flex;

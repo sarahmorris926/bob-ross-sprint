@@ -1,16 +1,21 @@
-'use strict';
+"use strict";
 
-angular.module("MovieWatchlist").controller("MovieCtrl", function($scope, MovieFactory) {
-
-  $scope.searchForMovies = () => {
-    MovieFactory.searchAPIMovies($scope.keyword)
-      .then( movies => {
-        const movieList = movies.data.map( movie => {
-          if (movie.poster === "N/A")
-            movie.poster = "/images/no-poster.jpg";
+angular
+  .module("MovieWatchlist")
+  .controller("MovieCtrl", function($scope, MovieFactory) {
+    $scope.searchForMovies = () => {
+      MovieFactory.searchAPIMovies($scope.keyword).then(movies => {
+        const movieList = movies.data.map(movie => {
+          if (movie.poster === "N/A") movie.poster = "/images/no-poster.jpg";
           return movie;
-        })
+        });
         $scope.movieList = movieList;
       });
-  };
-});
+    };
+
+    $scope.addToWatchlist = foo => {
+      MovieFactory.postToWatchlist(stuff).then(foodata => {
+        // do something
+      });
+    };
+  });
