@@ -17,3 +17,5 @@ body {
   -webkit-box-shadow: 2px 7px 20px -1px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 2px 7px 20px -1px rgba(0, 0, 0, 0.61);
   box-shadow: 2px 7px 20px -1px rgba(0, 0, 0, 0.61); }
+  .movie-card img {
+    max-width: 300px; }
